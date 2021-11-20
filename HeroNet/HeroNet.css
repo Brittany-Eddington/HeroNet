@@ -1,0 +1,609 @@
+* {
+    font-family: 'Amaranth', sans-serif;
+    box-sizing: border-box;
+}
+footer {
+    position:fixed;
+    bottom: 0;
+    left: 0;
+    padding-left: 5px;
+    width: 100%;
+    margin: 0;
+}
+.logo {
+    max-height: 100px;
+    border-radius: 50%;
+    border: 3px solid silver;
+}
+/*Theme Menu*/
+#themeMenu {
+    position: relative;
+    display: flex;
+    max-height:fit-content;
+    max-width: fit-content;
+}
+#themeMenu:hover #drpdown {
+    display: flex;
+    flex-direction:column;
+}
+#drpdown {
+    display: none;
+    position: absolute;
+    max-width:fit-content;
+    z-index: 1;
+}
+nav {
+    position: sticky;
+    top: 0;
+}
+/*Heronet Theme*/
+.bodyHN {
+    background-color: silver;
+}
+.topHN {
+    background-color: #0b069e;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-height: 100px;
+    margin: none;
+    padding: 5px;
+    color: silver;
+    font-size: 50px;
+    font-family: 'Amaranth', sans-serif;
+}
+.navHN {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: silver;
+    margin: none;
+    padding: 5px;
+}
+.buttonsHN {
+    border-radius: 25%;
+    background-color: #0b069e;
+    color:silver;
+}
+.navHN button:hover {
+    text-shadow: 2px 2px blue;
+}
+.navHN div {
+    border-radius: 25%;
+    background-color: #0b069e;
+    color:silver;
+}
+.footHN {
+    background-color: #0b069e;
+}
+.smallTextHN {
+    color: silver;
+}
+
+/*Justice Girl Theme*/
+.bodyJG {
+    background-color: #117c0a;
+}
+.topJG {
+    background-color: #0b069e;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-height: 100px;
+    margin: none;
+    padding: 5px;
+    color: #117c0a;
+    font-size: 50px;
+    font-family: 'Amaranth', sans-serif;
+}
+.navJG {
+    position: sticky;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #117c0a;
+    margin: none;
+    padding: 5px;
+}
+.buttonsJG {
+    border-radius: 25%;
+    background-color: #0b069e;
+    color:#117c0a;
+}
+.navJG button:hover {
+    text-shadow: 2px 2px rgb(5, 53, 5);
+}
+.navJG div {
+    border-radius: 25%;
+    background-color: #0b069e;
+    color:#117c0a;
+}
+.drpdownJG {
+    display: none;
+    position: absolute;
+    max-width:fit-content;
+    z-index: 1;
+}
+.footJG {
+    background-color: #0b069e;
+}
+.smallTextJG {
+    color: #117c0a;
+}
+
+/*White Knight Theme*/
+.bodyWK {
+    background-color: white;
+}
+.topWK {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-height: 100px;
+    margin: none;
+    padding: 5px;
+    color: white;
+    font-size: 50px;
+    font-family: 'Amaranth', sans-serif;
+}
+.navWK {
+    position: sticky;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: white;
+    margin: none;
+    padding: 5px;
+}
+.buttonsWK {
+    border-radius: 25%;
+    background-color: black;
+    color:white;
+}
+.navWK button:hover {
+    text-shadow: 2px 2px gray;
+}
+.navWK div {
+    border-radius: 25%;
+    background-color: black;
+    color:white;
+}
+.footWK {
+    background-color: black;
+}
+.smallTextWK {
+    color: white;
+}
+
+/*The Sybil theme*/
+.bodyTS {
+    background-color: #57be7a;
+}
+.topTS {
+    background-color: #5b70b0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-height: 100px;
+    margin: none;
+    padding: 5px;
+    color: #57be7a;
+    font-size: 50px;
+    font-family: 'Amaranth', sans-serif;
+}
+.navTS {
+    position: sticky;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #5b70b0;
+    margin: none;
+    padding: 5px;
+}
+.buttonsTS {
+    border-radius: 25%;
+    background-color: #57be7a;
+    color:#5b70b0;
+}
+.navTS button:hover {
+    text-shadow: 2px 2px #253d85;
+}
+.navTS div {
+    border-radius: 25%;
+    background-color: #57be7a;
+    color: #5b70b0;
+}
+.footTS {
+    background-color: #57be7a;
+}
+.smallTextTS {
+    color: #5b70b0;
+}
+
+/*Vanish theme*/
+.bodyV {
+    background-color: #000101;
+}
+.topV {
+    background-color: #19c4be;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-height: 100px;
+    margin: none;
+    padding: 5px;
+    color: #000101;
+    font-size: 50px;
+    font-family: 'Amaranth', sans-serif;
+}
+.navV {
+    position: sticky;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #000101;
+    margin: none;
+    padding: 5px;
+}
+.buttonsV {
+    border-radius: 25%;
+    background-color: #19c4be;
+    color: #000101;
+}
+.navV button:hover {
+    text-shadow: 2px 2px #206461;
+}
+.navV div {
+    border-radius: 25%;
+    background-color: #19c4be;
+    color:#000101;
+}
+.footV {
+    background-color: #19c4be;
+}
+.smallTextV {
+    color: #000101;
+}
+
+/*Black Queen theme*/
+.bodyBQ {
+    background-color: black;
+}
+.topBQ {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-height: 100px;
+    margin: none;
+    padding: 5px;
+    color: #43020a;
+    font-size: 50px;
+    font-family: 'Amaranth', sans-serif;
+}
+.navBQ {
+    position: sticky;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: black;
+    margin: none;
+    padding: 5px;
+}
+.buttonsBQ {
+    border-radius: 25%;
+    background-color: #43020a;
+    color: black;
+}
+.navBQ button:hover {
+    text-shadow: 2px 2px #330006;
+}
+.navBQ div {
+    border-radius: 25%;
+    background-color: #43020a;
+    color: black;
+}
+.footBQ {
+    background-color: #43020a;
+}
+.smallTextBQ {
+    color: black;
+}
+
+/*The Baron theme*/
+.bodyTB {
+    background-color: #193700;
+}
+.topTB {
+    background-color: #5fd101;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-height: 100px;
+    margin: none;
+    padding: 5px;
+    color: #193700;
+    font-size: 50px;
+    font-family: 'Amaranth', sans-serif;
+}
+.navTB {
+    position: sticky;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #193700;
+    margin: none;
+    padding: 5px;
+}
+.buttonsTB {
+    border-radius: 25%;
+    background-color: #5fd101;
+    color:#51a60a;
+}
+.navTB button:hover {
+    text-shadow: 2px 2px #193700;
+}
+.navTB div {
+    border-radius: 25%;
+    background-color: #5fd101;
+    color: #51a60a;
+}
+.footTB {
+    background-color: #51a60a;
+}
+.smallTextTB {
+    color: #193700;
+}
+
+/*Main page*/
+#mainPage {
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+.mainh1 {
+    font-size: 40px;
+}
+ul {
+    list-style-type: none;
+}
+.mainp {
+    font-size: 25px;
+}
+.mainHN {
+    color: #0b069e;
+}
+.mainJG {
+    color:#0b069e;
+}
+.mainWK {
+    color: black;
+}
+.mainTS {
+    color: #5b70b0;
+}
+.mainV {
+    color: #19c4be;
+}
+.mainBQ {
+    color: #43020a;
+}
+.mainTB {
+    color: #5fd101;
+}
+/*Character Bio page*/
+#bioMain {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    margin: 2%;
+}
+.bioBtnHN {
+    background-color: #0b069e;
+    color: silver;
+    text-align:center;
+    font-size: 500%;
+    border-radius: 25%;
+    max-width: 100%;
+    padding: 1%;
+    margin: 1%;
+    text-align: center;
+}
+.mainBioHN button:hover {
+    text-shadow: 2px 2px blue;
+}
+.bioBtnJG {
+    background-color: #0b069e;
+    color: #117c0a;
+    text-align:center;
+    font-size: 500%;
+    border-radius: 25%;
+    max-width: 100%;
+    padding: 1%;
+    margin: 1%;
+    text-align: center;
+}
+.mainBioJG button:hover {
+    text-shadow: 2px 2px rgb(5, 53, 5);
+}
+.bioBtnWK {
+    background-color: black;
+    color: white;
+    text-align:center;
+    font-size: 500%;
+    border-radius: 25%;
+    max-width: 100%;
+    padding: 1%;
+    margin: 1%;
+    text-align: center;
+}
+.mainBioWK button:hover {
+    text-shadow: 2px 2px gray;
+}
+.bioBtnTS {
+    background-color: #5b70b0;
+    color: #57be7a;
+    text-align:center;
+    font-size: 500%;
+    border-radius: 25%;
+    max-width: 100%;
+    padding: 1%;
+    margin: 1%;
+    text-align: center;
+}
+.mainBioTS button:hover {
+    text-shadow: 2px 2px #253d85;
+}
+.bioBtnV {
+    background-color: #000101;
+    color: #19c4be;
+    text-align:center;
+    font-size: 500%;
+    border-radius: 25%;
+    max-width: 100%;
+    padding: 1%;
+    margin: 1%;
+    text-align: center;
+}
+.mainBioV button:hover {
+    text-shadow: 2px 2px #206461;
+}
+.bioBtnBQ {
+    background-color: black;
+    color: #43020a;
+    text-align:center;
+    font-size: 500%;
+    border-radius: 25%;
+    max-width: 100%;
+    padding: 1%;
+    margin: 1%;
+    text-align: center;
+}
+.mainBioBQ button:hover {
+    text-shadow: 2px 2px #330006;
+}
+.bioBtnTB {
+    background-color: #193700;
+    color: #5fd101;
+    text-align:center;
+    font-size: 500%;
+    border-radius: 25%;
+    max-width: 100%;
+    padding: 1%;
+    margin: 1%;
+    text-align: center;
+}
+.mainBioTB button:hover {
+    text-shadow: 2px 2px #51a60a;
+}
+
+.charBio {
+    display: flex;
+    justify-content: space-evenly;
+    position: fixed;
+    top: auto;
+    right: 33%;
+    left: 33%;
+    max-height: 500px;
+    max-width: 50%;
+    border: 5px solid black;
+    border-radius: 5%;
+    background-color: black;
+}
+.charBio img {
+    max-height: 100%;
+    max-width: 50%;
+    border-top-left-radius: 5%;
+    border-bottom-left-radius: 5%;
+    border: 5px solid black;
+    padding: none;
+    margin:none;
+}
+.charWords {
+    text-align: center;
+    background-color:beige;
+    margin: none;
+    padding: 5px;
+    font-size:100%;
+}
+
+/*Author page*/
+.authorMain {
+    display: inline-block;
+    margin: 1%;
+    padding: 1%;
+}
+.authorMain img {
+    float:left;
+    width: 50%;
+    padding: 1%;
+}
+.authorMain p {
+    float:right;
+    max-width: 50%;
+    padding: 1%;
+}
+.authorPicHN {
+    border: 4px solid #0b069e;
+}
+.authorWordsHN {
+    color:#0b069e;
+}
+.authorPicJG {
+    border: 4px solid #0b069e;
+}
+.authorWordsJG {
+    color:#0b069e;
+}
+.authorPicWK {
+    border: 4px solid black;
+}
+.authorWordsWK {
+    color:black;
+}
+.authorPicTS {
+    border: 4px solid #5b70b0;
+}
+.authorWordsTS {
+    color:#5b70b0;
+}
+.authorPicV {
+    border: 4px solid #19c4be;
+}
+.authorWordsV {
+    color:#19c4be;
+}
+.authorPicBQ {
+    border: 4px solid #43020a;
+}
+.authorWordsBQ {
+    color:#43020a;
+}
+.authorPicTB {
+    border: 4px solid #5fd101;
+}
+.authorWordsTB {
+    color:#5fd101;
+}
+.shopHN {
+    color: #0b069e;
+}
+.shopJG {
+    color: #0b069e;
+}
+.shopWK {
+    color: black;
+}
+.shopTS {
+    color: #5b70b0;
+}
+.shopV {
+    color: #19c4be;
+}
+.shopBQ {
+    color: #43020a;
+}
+.shopTB {
+    color: #5fd101;
+}
